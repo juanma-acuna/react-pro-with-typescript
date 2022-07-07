@@ -1,0 +1,127 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "First Name",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 2
+      },
+      {
+        "type": "maxLength",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Last Name",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 2
+      },
+      {
+        "type": "maxLength",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "your@email.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "email"
+      }
+    ]
+  },
+  {
+    "type": "password",
+    "name": "password1",
+    "placeholder": "Password",
+    "label": "Password",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 6
+      },
+      {
+        "type": "maxLength",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "type": "password",
+    "name": "password2",
+    "placeholder": "Confirm Password",
+    "label": "Confirm Password",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "minLength",
+        "value": 6
+      },
+      {
+        "type": "maxLength",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "placeholder": "Select a game",
+    "options": [
+      { "id": 0, "label": "Super Smash" },
+      { "id": 1, "label": "Street Fighter" },
+      { "id": 2, "label": "Mortal Kombat" },
+      { "id": 3, "label": "Fifa" },
+      { "id": 4, "label": "Overwatch" }
+    ],
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  },
+  {
+    "type": "checkbox",
+    "name": "terms",
+    "label": "I accept the terms and conditions",
+    "value": false,
+    "validations": [
+      {
+        "type": "required"
+      }
+    ]
+  }
+]
