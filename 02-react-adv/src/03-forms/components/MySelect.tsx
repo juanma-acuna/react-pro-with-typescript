@@ -16,10 +16,15 @@ export const MySelect = ({ label, ...props }: Props) => {
       <label htmlFor={props.id || props.name}>{label}</label>
       {typeof options !== "undefined" ? (
         <select {...field} {...props}>
-          {placeholder && <option value="">{placeholder}</option>}
+          <option key={placeholder || "placeholder"} value="">
+            {placeholder || "Select an option"}
+          </option>
           {options &&
             options.map((option: any) => (
-              <option key={option.value} value={option.value}>
+              <option
+                key={option.value || option.id || option.label}
+                value={option.value || option.id || option.label}
+              >
                 {option.label}
               </option>
             ))}
